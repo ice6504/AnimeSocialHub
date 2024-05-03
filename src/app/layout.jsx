@@ -2,9 +2,12 @@ import { Mitr } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+// components
+import Header from "./components/Header";
+
 const mitr = Mitr({
   subsets: ["latin"],
-  weight: ["200","300","400","500","600","700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font-mitr",
 });
 
@@ -15,8 +18,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={mitr.className}>{children}</body>
+    <html lang="en" data-theme="light">
+      <body className={`${mitr.className}`}>
+        <Header />
+        <main className="pt-20 min-h-screen">{children}</main>
+      </body>
     </html>
   );
 }
