@@ -1,1 +1,1 @@
-# AnimeSocialHub 
+# AniHub 
