@@ -3,7 +3,7 @@ import Link from "next/link";
 function Header() {
   return (
     <>
-      <div className="navbar py-3 bg-secondary text-base-100 fixed inset-x-0 top-0">
+      <div className="navbar py-3 bg-secondary text-base-100 fixed inset-x-0 top-0 z-50">
         <div className="navbar-start space-x-2">
           <Link
             href="/"

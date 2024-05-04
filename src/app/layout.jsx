@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="mytheme">
       <body className={`${mitr.className}`}>
         <Header />
-        <main className="pt-20 min-h-screen">{children}</main>
+        <main className="pt-20 pb-5 min-h-screen">{children}</main>
       </body>
     </html>
   );
