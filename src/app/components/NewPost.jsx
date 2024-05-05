@@ -6,7 +6,7 @@ function NewPost() {
       <div className="flex justify-between items-center gap-5">
         <div className="avatar">
           <div className="w-14 sm:w-20 bg-primary rounded-full">
-            <Image src="/next.svg" alt="User" width="100" height="100" />
+            <Image src="/next.svg" alt="User" width="100" height="100" priority={true} />
           </div>
         </div>
         <input

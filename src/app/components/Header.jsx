@@ -14,7 +14,7 @@ function Header() {
           {/* search */}
           <label className="input input-sm h-10 w-28 sm:w-40 focus-within:sm:w-64 hover:sm:w-64 text-secondary rounded-full flex items-center gap-2 transition-all ease-in-out duration-500">
             <i className="fa-solid fa-magnifying-glass font-bold"></i>
-            <input type="text" className="grow" placeholder="Search" />
+            <input type="text" className="grow placeholder:font-medium font-medium" placeholder="Search" />
           </label>
         </div>
         <div className="navbar-center sm:hidden">
