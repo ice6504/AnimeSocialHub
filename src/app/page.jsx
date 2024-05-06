@@ -9,6 +9,11 @@ export default function Home() {
       <div className="lg:col-span-3 space-y-3 sm:space-y-5">
         <NewPost />
         <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
       </div>
       <Aside />
     </div>

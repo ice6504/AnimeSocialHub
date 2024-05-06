@@ -1,21 +1,9 @@
-import axios from "axios";
-// import { useEffect , useState } from "react";
+import Link from "next/link";
+import genres from "../../data/genres.json";
 
 function Aside() {
-  const genres = [
-    "Action",
-    "Comedy",
-    "Sci Fi",
-    "Romance",
-    "Mystery",
-    "Adventure",
-    "Drama",
-    "Slice of life",
-    "Sports",
-  ];
-
   return (
-    <aside className="join join-vertical sticky top-20 bg-secondary h-fit rounded-3xl">
+    <div className="join join-vertical bg-secondary h-fit rounded-3xl sticky top-20 max-lg:hidden">
       <div className="join-item h-20 bg-primary flex items-center px-5 text-4xl lg:text-3xl text-base-100 font-semibold">
         Genres
       </div>
@@ -24,13 +12,15 @@ function Aside() {
           {genres.map((genre, index) => {
             return (
               <li key={index}>
-                <a>{genre}</a>
+                <Link className="focus:text-base-100" href="/">
+                  {genre}
+                </Link>
               </li>
             );
           })}
         </ul>
       </div>
-    </aside>
+    </div>
   );
 }
 

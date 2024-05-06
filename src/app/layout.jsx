@@ -3,7 +3,7 @@ import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // components
-import Header from "./components/Header";
+import Drawer from "./components/Drawer";
 
 const mitr = Mitr({
   subsets: ["latin"],
@@ -20,8 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="mytheme">
       <body className={`${mitr.className}`}>
-        <Header />
-        <main className="pt-20 pb-5 min-h-screen">{children}</main>
+        <Drawer>
+         {children}
+        </Drawer>
       </body>
     </html>
   );
