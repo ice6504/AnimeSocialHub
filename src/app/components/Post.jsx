@@ -1,22 +1,30 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Post() {
   return (
     <div className="bg-secondary h-fit rounded-3xl card text-base-100">
       <div className="flex items-center gap-3 p-8">
-        <div className="avatar">
-          <div className="w-12 sm:w-16 bg-primary rounded-full">
-            <Image
-              src="/next.svg"
-              alt="User"
-              width="100"
-              height="100"
-              priority={true}
-            />
+        <Link href="/username">
+          <div className="avatar">
+            <div className="w-12 sm:w-16 bg-primary rounded-full">
+              <Image
+                src="/next.svg"
+                alt="User"
+                width="100"
+                height="100"
+                priority={true}
+              />
+            </div>
           </div>
-        </div>
-        <div className="">
-          <h3 className="font-medium text-xl sm:text-2xl">Username</h3>
+        </Link>
+        <div className="flex flex-col">
+          <Link
+            href="/username"
+            className="font-medium text-xl sm:text-2xl sm:hover:text-primary transition-all"
+          >
+            Username
+          </Link>
           <span>2 hours ago</span>
         </div>
       </div>
@@ -43,9 +51,14 @@ function Post() {
         </div>
         {/* link */}
         <div>125 likes</div>
-        <div className="space-x-2">
-          <span className="font-medium text-xl">Username</span>
-          <span>
+        <div className="flex sm:items-end space-x-2">
+          <Link
+            href="/username"
+            className="font-medium text-xl sm:hover:text-primary transition-all"
+          >
+            Username
+          </Link>
+          <span className="line-clamp-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
             voluptate.
           </span>

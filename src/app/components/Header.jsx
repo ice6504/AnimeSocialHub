@@ -3,7 +3,7 @@ import Link from "next/link";
 function Header() {
   return (
     <>
-      <div className="navbar py-3 bg-secondary text-base-100 fixed inset-x-0 top-0 z-50">
+      <header className="navbar py-3 bg-secondary text-base-100 fixed inset-x-0 top-0 z-50">
         <div className="navbar-start space-x-2">
           <div className="flex-none lg:hidden">
             <label
@@ -33,11 +33,11 @@ function Header() {
           </div>
         </div>
         <div className="navbar-end">
-          <Link href="" className="btn btn-circle btn-ghost">
+          <Link href="/chat" className="btn btn-circle btn-ghost">
             <i className="fa-solid fa-comment-dots fa-2xl"></i>
           </Link>
         </div>
-      </div>
+      </header>
     </>
   );
 }

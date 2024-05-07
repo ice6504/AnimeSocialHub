@@ -25,7 +25,7 @@ function Drawer({ children }) {
         {/* Navbar */}
         <Header />
         {/* Page content here */}
-        <main className="pt-20 pb-5 min-h-screen">{children}</main>
+        <main className="min-h-screen">{children}</main>
       </div>
       <div className="drawer-side lg:hidden z-[60]">
         <label
