@@ -1,8 +1,22 @@
+import Contact from "./components/Contact";
+
 function page() {
   return (
-    <div className="grid lg:grid-cols-3 grid-flow-row h-full pt-20 lg:pt-[4.6rem] px-1 pb-1 gap-1">
+    <div className="h-screen grid lg:grid-cols-3 grid-flow-row  pt-20 lg:pt-[4.6rem] px-1 pb-1 gap-1">
       {/* Contact */}
-      <div className="bg-secondary rounded-3xl"></div>
+      <div className="bg-secondary rounded-3xl overflow-y-scroll h-full p-2">
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+      </div>
       {/* Chat */}
       <div className="col-span-2 rounded-3xl relative max-lg:hidden">
         {/* HeadChat */}
@@ -14,7 +28,7 @@ function page() {
         </div>
         {/* ChatRoom */}
         <div className="h-full flex flex-col justify-end rounded-3xl pb-24 px-3 border-4 border-secondary">
-          <div className="">
+          <div className="overflow-y-scroll">
             <div className="chat chat-start">
               <div className="chat-bubble max-w-96">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
