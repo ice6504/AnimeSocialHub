@@ -28,7 +28,7 @@ function Post() {
           <span>2 hours ago</span>
         </div>
       </div>
-      <figure className="h-96 object-cover bg-primary rounded-none">
+      <figure className="h-96 sm:h-[30rem] object-cover bg-primary rounded-none">
         <Image
           className="w-full"
           src="/next.svg"
@@ -41,17 +41,17 @@ function Post() {
       <div className="p-5 space-y-2">
         {/* interact */}
         <div className="flex items-center gap-5 text-4xl">
-          <label className="swap">
+          <label className="swap active:scale-90 transition-all duration-200">
             <input type="checkbox" />
-            <i className="fa-regular fa-heart swap-on duration-75"></i>
-            <i className="fa-solid fa-heart text-primary swap-off duration-75"></i>
+            <i className="fa-regular fa-heart swap-off"></i>
+            <i className="fa-solid fa-heart text-primary swap-on"></i>
           </label>
-          <i className="fa-regular fa-comment"></i>
-          <i className="fa-regular fa-paper-plane"></i>
+          <i className="fa-regular fa-comment active:scale-90 transition-all cursor-pointer"></i>
+          <i className="fa-regular fa-paper-plane active:scale-90 transition-all cursor-pointer"></i>
         </div>
         {/* link */}
         <div>125 likes</div>
-        <div className="flex sm:items-end space-x-2">
+        <div className="flex max-sm:flex-col sm:items-end sm:space-x-2">
           <Link
             href="/username"
             className="font-medium text-xl sm:hover:text-primary transition-all"
